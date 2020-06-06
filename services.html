@@ -1,0 +1,498 @@
+<html>
+    <head>
+        <title>HIRED HAND</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="swipper.min.css">
+       
+        <link rel="stylesheet" href="suit.css">
+        <style>
+            .team-area{
+                padding:60px 0;
+                        }
+            .section-heading{
+                text-align:center;
+                /* color:#ffff; */
+                margin-bottom: 50px;
+                text-transform: uppercase;
+                font-size:65px;
+
+            }
+            .card{
+                border:none;
+                box-shadow: 0 4px 8px 0 rgb(157, 199, 4)
+                , 0 6px 20px 0 rgb(157, 199, 4);
+                /* background: rgb(157, 199, 4); */
+                /* border-radius: 100px; */
+            }
+            .img-area{
+                width:150px;
+                height:150px;
+                display:inline-block;
+                overflow: hidden;
+                border-radius: 50%;
+            }
+
+            .team-single:hover .side-two{
+                transform:rotateY(0deg);
+                border-radius: 5px;
+            }
+            .team-single:hover .side-one{
+                transform:rotateY(180deg);
+            }
+            .content-area{
+                transform:perspective(1000px);
+                transition: 1s;
+                transform-style:preserve-3d;
+                position:relative;
+            }
+            .side-one{
+                position:relative;
+                z-index:2;
+                margin-bottom: 30px;
+               
+                transform: rotateY(0deg);
+
+            }
+            .side-two{
+                position: absolute;
+                top:0;
+                left:0;
+                background:transparent;
+                width:100%;
+                transform:rotateY(-90deg);
+            }
+            
+            .side-one,.side-two{
+                backface-visibility:hidden;
+                /* background: tan; */
+
+                transition:1s;
+                transform-style: preserve-3d;
+            }
+            .side-one .card,.side-two .card{
+                min-height:312px;
+                /* background: rgb(177, 118, 40); */
+                background:transparent;
+
+            }
+            .side-two .card .a{
+                font-size: 18px;
+                color:rgb(157, 199, 4);
+            -webkit-text-stroke: 0.3px black;
+
+            }
+            h1,h3{color:rgb(157, 199, 4);
+            font-size: 25px;
+            -webkit-text-stroke: 0.3px black;
+            margin-top: 5px;
+            
+            }
+            p{
+                color:rgb(157, 199, 4);
+            font-size: 25px;
+            -webkit-text-stroke: 0.3px black;
+            margin-top: 5px;
+
+            }
+            .btn-info{
+          border :2px solid whitesmoke;
+          color:black;
+          background-color: rgb(157, 199, 4);
+          width:50%;
+
+          }
+
+        </style>
+        </head>
+        <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <a class="navbar-brand" href="#">HIRED HAND</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                    
+                      <li class="nav-item">
+                        <a class="nav-link" href="account.html">Login</a>
+                        
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="services.html">Hands</a>
+                       </li>
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      <button type="button" class="btn btn-light">Join To Become a Hand</button>
+                      
+                    </ul>
+                    
+                    
+                   
+                  </div>
+    
+                </nav>
+            <!-- Servics cards -->
+            <section class=team-area>
+                <div class=container>
+                    <h3 class="section-heading">The Best Hands In Town</h3>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="team-single">
+                               <div class="content-area">
+                                   <div class="side-one">
+                                       <div class="card">
+                                           <div class="card-body text-center">
+                                               <div class="img-area">
+                                                   <img src="pic/elec.JPG">
+                                               </div>
+                                                   <h1>Full Name</h1>
+                                                   <p>Electrician
+                                                   </p>
+                                                   
+                                               
+                                           </div>
+
+                                       </div>
+                                   </div>
+                                   <div class="side-two">
+                                       <div class="card">
+                                           <div class="card-body text-center mt-4">
+                                               <h3>Name:XYZ ABC</h3>
+                                               <p>Electrician
+                                                <br>
+                                                Jobs Completed:N/A 
+                                                <br>
+                                                Reviews:N/A 
+                                                <br>
+                                                Availability
+                                            </p>
+                                            <button type="submit" class="btn btn-info">Contact</button>
+                                            
+                                               <ul class="list-inline">
+                                                   <li class="list-inline-item">
+                                                       <a href="#" class="social-icon">
+                                                           <i class="fa fa-facebook.png"></i>
+                                                       </a>
+                                                   </li>
+                                                   <li class="list-inline-item">
+                                                    <a href="#" class="social-icon">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="social-icon">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                               </ul>
+
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+
+                            </div>
+                        </div>
+                        <!-- 2nd one -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="team-single">
+                               <div class="content-area">
+                                   <div class="side-one">
+                                       <div class="card">
+                                           <div class="card-body text-center">
+                                               <div class="img-area">
+                                                   <img src="pic/plumber.JPG">
+                                               </div>
+                                                   <h1>Full Name</h1>
+                                                   <p>Plumber</p>
+                                               
+                                           </div>
+
+                                       </div>
+                                   </div>
+                                   <div class="side-two">
+                                       <div class="card">
+                                           <div class="card-body text-center mt-4">
+                                            <h3>Name:XYZ ABC</h3>
+                                            <p>Carpentar
+                                             <br>
+                                             Jobs Completed:N/A 
+                                             <br>
+                                             Reviews:N/A 
+                                             <br>
+                                             Availability
+                                         </p>
+                                         <button type="submit" class="btn btn-info">Contact</button>
+
+                                               <ul class="list-inline">
+                                                   <li class="list-inline-item">
+                                                       <a href="#" class="social-icon">
+                                                           <i class="fa fa-facebook"></i>
+                                                       </a>
+                                                   </li>
+                                                   <li class="list-inline-item">
+                                                    <a href="#" class="social-icon">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="social-icon">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                               </ul>
+
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+
+                            </div>
+                        </div>
+                        <!-- end 2nd -->
+                        <!-- 3rd -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="team-single">
+                               <div class="content-area">
+                                   <div class="side-one">
+                                       <div class="card">
+                                           <div class="card-body text-center">
+                                               <div class="img-area">
+                                                   <img src="pic/techn.JPG">
+                                               </div>
+                                                   <h1>Full Name</h1>
+                                                   <p>Technician</p>
+                                               
+                                           </div>
+
+                                       </div>
+                                   </div>
+                                   <div class="side-two">
+                                       <div class="card">
+                                           <div class="card-body text-center mt-4">
+                                            <h3>Name:XYZ ABC</h3>
+                                            <p>Technician
+                                             <br>
+                                             Jobs Completed:N/A 
+                                             <br>
+                                             Reviews:N/A 
+                                             <br>
+                                             Availability
+                                         </p>
+                                         <button type="submit" class="btn btn-info">Contact</button>
+
+                                               <ul class="list-inline">
+                                                   <li class="list-inline-item">
+                                                       <a href="#" class="social-icon">
+                                                           <i class="fa fa-facebook"></i>
+                                                       </a>
+                                                   </li>
+                                                   <li class="list-inline-item">
+                                                    <a href="#" class="social-icon">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="social-icon">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                               </ul>
+
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+
+                            </div>
+                        </div>
+                        <!-- end 3rd -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="team-single">
+                               <div class="content-area">
+                                   <div class="side-one">
+                                       <div class="card">
+                                           <div class="card-body text-center">
+                                               <div class="img-area">
+                                                   <img src="pic/garden.JPG">
+                                               </div>
+                                                   <h1>Full Name</h1>
+                                                   <p>Gardener</p>
+                                               
+                                           </div>
+
+                                       </div>
+                                   </div>
+                                   <div class="side-two">
+                                       <div class="card">
+                                           <div class="card-body text-center mt-4">
+                                            <h3>Name:XYZ ABC</h3>
+                                            <p>Gardener
+                                             <br>
+                                             Jobs Completed:N/A 
+                                             <br>
+                                             Reviews:N/A 
+                                             <br>
+                                             Availability
+                                         </p>
+                                         <button type="submit" class="btn btn-info">Contact</button>
+
+                                               <ul class="list-inline">
+                                                   <li class="list-inline-item">
+                                                       <a href="#" class="social-icon">
+                                                           <i class="fa fa-facebook"></i>
+                                                       </a>
+                                                   </li>
+                                                   <li class="list-inline-item">
+                                                    <a href="#" class="social-icon">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="social-icon">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                               </ul>
+
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+
+                            </div>
+                        </div>
+                        <!-- end -->
+                        <!-- start -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="team-single">
+                               <div class="content-area">
+                                   <div class="side-one">
+                                       <div class="card">
+                                           <div class="card-body text-center">
+                                               <div class="img-area">
+                                                   <img src="pic/watchmen.JPG">
+                                               </div>
+                                                   <h1>Full Name</h1>
+                                                   <p>Gaurd</p>
+                                               
+                                           </div>
+
+                                       </div>
+                                   </div>
+                                   <div class="side-two">
+                                       <div class="card">
+                                           <div class="card-body text-center mt-4">
+                                            <h3>Name:XYZ ABC</h3>
+                                            <p>Guard
+                                             <br>
+                                             Jobs Completed:N/A 
+                                             <br>
+                                             Reviews:N/A 
+                                             <br>
+                                             Availability
+                                         </p>
+                                         <button type="submit" class="btn btn-info">Contact</button>
+
+                                               <ul class="list-inline">
+                                                   <li class="list-inline-item">
+                                                       <a href="#" class="social-icon">
+                                                           <i class="fa fa-facebook"></i>
+                                                       </a>
+                                                   </li>
+                                                   <li class="list-inline-item">
+                                                    <a href="#" class="social-icon">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="social-icon">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                               </ul>
+
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+
+                            </div>
+                        </div>
+                        <!-- end -->
+                        <!-- start -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="team-single">
+                               <div class="content-area">
+                                   <div class="side-one">
+                                       <div class="card">
+                                           <div class="card-body text-center">
+                                               <div class="img-area">
+                                                   <img src="pic/paint.JPG">
+                                               </div>
+                                                   <h1>Full Name</h1>
+                                                   <p>Painter</p>
+                                               
+                                           </div>
+
+                                       </div>
+                                   </div>
+                                   <div class="side-two">
+                                       <div class="card">
+                                           <div class="card-body text-center mt-4">
+                                            <h3>Name:XYZ ABC</h3>
+                                            <p>Painter
+                                             <br>
+                                             Jobs Completed:N/A 
+                                             <br>
+                                             Reviews:N/A 
+                                             <br>
+                                             Availability
+                                         </p>
+                                         <button type="submit" class="btn btn-info">Contact</button>
+
+                                               <ul class="list-inline">
+                                                   <li class="list-inline-item">
+                                                       <a href="#" class="social-icon">
+                                                           <i class="fa fa-facebook"></i>
+                                                       </a>
+                                                   </li>
+                                                   <li class="list-inline-item">
+                                                    <a href="#" class="social-icon">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="social-icon">
+                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                               </ul>
+
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+
+                            </div>
+                        </div>
+                        <!-- end -->
+                    </div>
+                </div>
+            </section>
+            <!-- pagination -->
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  <li class="page-item" style="color:chartreuse"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+        </body>
+</html>

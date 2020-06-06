@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>HIRED HAND</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="suit.css">
+        <style>
+            body{
+                background-image: url(pic/land2.JPG);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            ul{
+                margin-bottom: 50px;
+            }
+            ul a{
+                font-size:29px;
+                color:black;
+            }
+            .label{font-size:20px;
+            color:black;
+            font-weight:bold;
+            -webkit-text-stroke: 0.6px whitesmoke;
+
+        }
+            .form-control{
+                
+                background:transparent;
+                border-radius: 0px;
+                border:0px;
+                border-bottom: 1px solid rgb(157, 199, 4);
+                margin-bottom: 25px;
+                font-size: 20px;
+                -webkit-text-stroke: 0.6px whitesmoke;
+                color:black;
+                padding:30px;
+            }
+            input[type="checkbox"]{
+                height:15px;
+                width: 15px;
+            }
+            input[type="checkbox"]:hover{
+                height:15px;
+                width: 25px;
+                color:rgb(11, 100, 18) ;
+            }
+            small{
+                font-size: 19px;
+                color:whitesmoke;
+                padding-left: 10px;
+            }
+            
+            small:hover{
+                font-size: 25px;
+                color:rgb(11, 100, 18);
+                padding-left: 10px;
+            }
+            .btn-info{
+                background: transparent;
+                border-radius: 0px;
+                border :2px solid rgb(157, 199, 4);
+                color:black;
+                width: 360px;
+                margin-top: 20px;
+                font-size: 20px; 
+                font-weight: bold;
+                margin-bottom: 15px;
+                
+            }
+            .btn-info:hover{
+                border :2px solid whitesmoke;
+                color:black;
+                background-color: rgb(157, 199, 4);
+
+
+
+            }
+            p{
+                color:black;
+                font-size: 20px;
+
+            
+            }
+            p:hover{
+                color:rgb(157, 199, 4);
+                font-size: 25px;
+                -webkit-text-stroke: 0.7px black;
+
+            
+            }
+            .img{
+                width:100%;
+                height:100%;
+                
+            }
+            .imgp{
+               
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <div class="acc">
+         <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="row" style="margin-top: 120px; box-shadow: 10px 10px 50px 10px rgb(157, 199, 4); color:black">
+                         
+                            <div class="col-md-6" style="  position: relative;
+                            text-align: center;
+                            color: black;">
+                                <img src="pic/bg.JPG" width=100% height="100%">
+                           <div class='imgp' >
+                               <h3 style="border-bottom: 2px solid rgb(157, 199, 4);padding: 10px;">Haven't Become a Hand Yet</h3>
+                               <a href="#join.html"><div class="btn btn-info"style="width:95%; border :2px solid whitesmoke;
+                                color:black;
+                                background-color: rgb(157, 199, 4);">Already a Member</div></a>
+
+                        
+                           </div>
+                            
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <a href="#" style="border-bottom: 2px solid rgb(157, 199, 4);padding: 10px;">SignUp</a>
+                                   
+                                </ul>
+                                <label class="label control-label">UserName</label>
+                                <input type="text" class=form-control name=user placeholder="UserName">
+                                <label class="label control-label">Password</label>
+                                <input type="text" class=form-control name=pass placeholder="Password">
+                                <label class="label control-label">E-mail</label>
+                                <input type="text" class=form-control name=mail placeholder="EmailAddress">
+                                <input type="checkbox"><small>SignUp As Hirer</small>
+                                <br>
+                                <input type="checkbox"><small>SignUp as Hand</small>
+
+                                
+                                <a href="#"><div class="btn btn-info">SignUp</div></a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+         </div>
+        </div>
+
+    </body>
+</html>
